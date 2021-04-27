@@ -14,9 +14,10 @@ const ProjectCard = (props) => {
         View More
       </button>
       <ul>
-        {tech_stack.map((tech, idx) =>
-          tech ? <li key={idx}>{tech}</li> : null
-        )}
+        {tech_stack &&
+          tech_stack.map((tech, idx) =>
+            tech ? <li key={idx}>{tech}</li> : null
+          )}
       </ul>
     </div>
   )

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import aboutMe from '../data/about.md'
-import matter from 'gray-matter'
+import aboutMe from '../content/about/about.md'
 
 const About = (props) => {
   useEffect(() => {

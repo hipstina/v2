@@ -1,8 +1,8 @@
 ---
 metadata:  
-  - id: 3 
+  - id: 4 
   - version: '1.0.0' 
-  - featured: true 
+  - featured: false 
   - date_launched: '' 
 details: 
   - source_code: ''
@@ -13,10 +13,10 @@ details:
   - collaborators: ['']
   - images: ['']
   - description: ''
-title: 'Colormind v5'
-summary: 'A color contrast checker and library'
+title: 'About'
+summary: 'About christina'
 tech_stack: ['React', 'Express', 'Node.js', 'MongoDB']
 thumbnail: ''
 ---
 
-# This is a title
+# About Christina
