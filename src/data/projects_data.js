@@ -34,7 +34,7 @@ const projects = [
     thumbnail: ''
   },
   {
-    metadata: { id: 3, version: '1.0.0', featured: true, date_launched: '' },
+    metadata: { id: 3, version: '1.0.0', featured: false, date_launched: '' },
     details: {
       source_code: '',
       demo: [''],

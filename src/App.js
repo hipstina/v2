@@ -7,16 +7,19 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import ProjectDetail from './screens/ProjectDetail'
 import Projects from './screens/Projects'
-import data from './data/projects_data'
+import matter from 'gray-matter'
 
 const initialState = {
-  allProjects: data,
+  projectPaths: {},
+  allProjects: [],
   featured: [],
   projectDetail: ''
 }
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case 'paths':
+      return { ...state, projectPaths: action.payload }
     case 'projects':
       return { ...state, allProjects: action.payload }
     case 'project':
@@ -31,27 +34,45 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  useEffect(() => {
-    getProjects()
-    getFeatured()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  const parseMds = async (files) => {
+    // load multiple .md files to react: https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
+    const posts = await Promise.all(
+      Object.values(files).map((path) =>
+        fetch(path.default).then((res) => res.text())
+      )
+    ).catch((err) => console.error(err))
+    let parsedPosts = posts.map((post) => matter(post))
 
-  const getProjects = () => {
-    dispatch({ type: 'allProjects', payload: data })
+    await dispatch({ type: 'projects', payload: parsedPosts })
   }
 
+  const fetchAllMds = (r) => {
+    let mdfiles = {}
+    r.keys().forEach((item, index) => {
+      mdfiles[item.replace('./', '')] = r(item)
+    })
+    dispatch({ type: 'paths', payload: mdfiles })
+    parseMds(mdfiles)
+  }
+
+  useEffect(() => {
+    fetchAllMds(require.context('./data', false, /\.md$/))
+    getFeatured()
+    // eslint-disable-next-line
+  }, [])
+
   const getFeatured = () => {
-    let featured = data.filter((project) =>
-      project.metadata.featured ? true : false
-    )
-    dispatch({ type: 'featured', payload: featured })
+    if (Object.keys(state.allProjects).length > 0) {
+      let featured = state.allProjects.filter((project) =>
+        project.data.metadata.featured ? true : false
+      )
+      dispatch({ type: 'featured', payload: featured })
+    }
   }
 
   return (
     <div className="App">
       <Nav />
-
       <Switch>
         <Route
           exact
@@ -67,7 +88,14 @@ function App() {
         <Route
           exact
           path="/about"
-          component={(routerProps) => <About {...routerProps} />}
+          component={(routerProps) => (
+            <About
+              {...routerProps}
+              dispatch={dispatch}
+              content={state.projects}
+              details={state.projectDetail}
+            />
+          )}
         />
 
         <Route
@@ -92,7 +120,6 @@ function App() {
           )}
         />
       </Switch>
-
       <Footer />
     </div>
   )
