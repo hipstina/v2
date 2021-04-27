@@ -35,7 +35,9 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const parseMds = async (files) => {
-    // load multiple .md files to react: https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
+    // PARSE FETCHED FILES W/ GRAYMATTER
+    // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
+
     const posts = await Promise.all(
       Object.values(files).map((path) =>
         fetch(path.default).then((res) => res.text())
@@ -48,7 +50,7 @@ function App() {
 
   const fetchAllMds = (r) => {
     let mdfiles = {}
-    r.keys().forEach((item, index) => {
+    r.keys().forEach((item) => {
       mdfiles[item.replace('./', '')] = r(item)
     })
     dispatch({ type: 'paths', payload: mdfiles })
@@ -56,15 +58,17 @@ function App() {
   }
 
   useEffect(() => {
-    fetchAllMds(require.context('./data', false, /\.md$/))
+    // IMPORT MULTIPLE FILES
+    // https://stackoverflow.com/questions/44607396/importing-multiple-files-in-react
+    fetchAllMds(require.context('./content/projects', false, /\.md$/))
     getFeatured()
     // eslint-disable-next-line
   }, [])
 
   const getFeatured = () => {
-    if (Object.keys(state.allProjects).length > 0) {
+    if (Object.values(state.allProjects)) {
       let featured = state.allProjects.filter((project) =>
-        project.data.metadata.featured ? true : false
+        project.data.metadata[2].featured ? true : false
       )
       dispatch({ type: 'featured', payload: featured })
     }
@@ -85,18 +89,7 @@ function App() {
             />
           )}
         />
-        <Route
-          exact
-          path="/about"
-          component={(routerProps) => (
-            <About
-              {...routerProps}
-              dispatch={dispatch}
-              content={state.projects}
-              details={state.projectDetail}
-            />
-          )}
-        />
+        <Route exact path="/about" component={About} />
 
         <Route
           exact
