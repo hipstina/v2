@@ -1,0 +1,28 @@
+.featured__projects__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto, 100%);
+  align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+
+  margin: 0 auto;
+  width: 100vw;
+  border-top: 1px dotted rgb(175, 174, 174);
+  border-right: 1px dotted rgb(175, 174, 174);
+}
+
+@media only screen and (min-width: 800px) {
+  .featured__projects__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 100%);
+    align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    margin: 0 auto;
+    width: 65ch;
+  }
+}

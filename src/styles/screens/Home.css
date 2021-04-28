@@ -1,0 +1,15 @@
+.homepage__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage__featured {
+  max-width: 55ch;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 0;
+}

@@ -1,0 +1,80 @@
+.intro__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+  margin: 15vh 0 0 0;
+}
+.intro__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.intro__content h1 {
+  flex: 0 0 100%;
+  font-size: 46px;
+  margin: 0 auto 45px auto;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.intro__content h3 {
+  font-size: 23px;
+  font-weight: normal;
+  padding: 30px 0;
+  margin: 0 0 30px 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .intro__content h3 {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .intro__content h3 {
+    flex: 0 0 40%;
+  }
+}
+
+.intro__content blockquote {
+  margin: 15px 0 30px 0;
+  border: 1px dotted rgb(175, 174, 174);
+}
+
+@media only screen and (min-width: 800px) {
+  .intro__content blockquote {
+    margin: 300px 0 30px 0;
+  }
+}
+
+.intro__content p img {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 500px) {
+  .intro__content p img {
+    width: 35vw;
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .intro__content p img {
+    width: 390px;
+    margin: 15px 0;
+  }
+}
+
+.intro__content:first-child {
+  margin: 45px auto;
+}
+
+.intro__blockquote {
+  padding: 15px 30px;
+}

@@ -10,7 +10,6 @@ const Featured = (props) => {
       let slugify = [...title].map((char, idx) =>
         char === ' ' ? (char = '-') : char.toLowerCase()
       )
-      // dispatch({ type: 'project', payload: id })
       props.history.push(`/projects/${slugify.join('')}`)
     }
   }

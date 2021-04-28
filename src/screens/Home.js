@@ -7,6 +7,7 @@ const Home = (props) => {
   return (
     <div className="homepage__wrapper">
       <Introduction />
+      <h2 className="homepage__featured">Featured Projects</h2>
       <Featured {...props} />
     </div>
   )

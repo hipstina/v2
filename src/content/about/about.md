@@ -21,6 +21,6 @@ My experience advocating for the user while acting as an intermediary for devs h
 When I'm not trying to apply JS concepts to real life, I like solving crossword puzzles, listening to movie podcasts, and canceling plans.
 
 
-![Homemade headshot. Styled in halftone dots.](https://github.com/hipstina/v2/blob/main/src/assets/profile-about.png)
+![Homemade headshot. Styled in halftone dots.](https://raw.githubusercontent.com/hipstina/v2/main/src/assets/profile-about.png)
 
 ↑ I take all my own selfies.

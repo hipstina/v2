@@ -1,0 +1,43 @@
+.projectcard__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+
+  height: 170px;
+  padding: 30px;
+  /* margin: 5px 5px 0 0; */
+  cursor: pointer;
+  border-left: 1px dotted rgb(175, 174, 174);
+  border-bottom: 1px dotted rgb(175, 174, 174);
+}
+
+.projectcard__wrapper:hover {
+  background-color: #f4f4f4;
+}
+
+.projectcard__title {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.projectcard__summary {
+  height: 60px;
+}
+
+.projectcard__stack__wrapper {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.projectcard__stack__wrapper li {
+  color: #444;
+  font-size: 12px;
+  padding: 2px;
+  margin: 3px 10px 3px 0;
+  border-radius: 0.1rem;
+}
