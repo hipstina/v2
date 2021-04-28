@@ -2,13 +2,12 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 
 const Projects = (props) => {
-  const { allProjects, dispatch } = props
+  const { projects } = props
 
-  const renderDetails = (project, title, id) => {
+  const setDetails = (project, title, id, idx) => {
     let slugify = [...title].map((char) =>
       char === ' ' ? (char = '-') : char.toLowerCase()
     )
-    dispatch({ type: 'projectDetail', payload: id })
     props.history.push(`/projects/${slugify.join('')}`)
   }
 
@@ -16,14 +15,15 @@ const Projects = (props) => {
     <main>
       <section className="featured-projects-wrapper">
         <h2>Projects</h2>
-        {allProjects.map((project, idx) => (
+        {projects.map((project, idx) => (
           <div
             key={idx}
             onClick={() =>
-              renderDetails(
+              setDetails(
                 project,
                 project.data.title,
-                project.data.metadata.id
+                project.data.metadata[0].id,
+                idx
               )
             }
           >

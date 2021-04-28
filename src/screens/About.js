@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
-const About = (props) => {
+const About = () => {
   const [about, setAbout] = useState('')
   useEffect(() => {
     // load md into react: https://stackoverflow.com/a/53975297/6055581

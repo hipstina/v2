@@ -6,7 +6,7 @@ metadata:
   - date_launched: 'February 26, 2021' 
 details: 
   - source_code: 'https://github.com/hipstina/gooser'
-  - demo: ['fast-stream-31367.herokuapp.com/']
+  - demo: ['https://fast-stream-31367.herokuapp.com/']
   - roles: ['Git lord', 'front-end development']
   - status: 'Launched'
   - organization: 'General Assembly'
