@@ -20,55 +20,30 @@ const Introduction = (props) => {
   }, [])
 
   return (
-    <div>
+    <section>
       {intro ? (
-        <ReactMarkdown remarkPlugins={[gfm]}>{intro.content}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[gfm]}
+          components={{
+            a: ({ node, ...props }) => (
+              <a
+                href={props.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                {...props}
+              >
+                {props.children[0]}
+              </a>
+            )
+          }}
+        >
+          {intro.content}
+        </ReactMarkdown>
       ) : (
         'Hello.'
       )}
-    </div>
+    </section>
   )
 }
 
 export default Introduction
-
-// import React from 'react'
-// import homeprofile from '../assets/profile-homepage.png'
-
-// const Introduction = () => {
-//   return (
-//     <div>
-//       <section>
-//         <h2>I'm Christina, a full-stack developer based in Chicago.</h2>
-//         <p>
-//           I cultivated an interest in web development after several years of
-//           working as a tech support specialist. Here are some things I've made.
-//         </p>
-//         <figure>
-//           <img
-//             // src={homeprofile}
-//             alt="Homemade headshot. Styled in halftone dots."
-//             title="Christina Padilla"
-//           />
-//         </figure>
-//       </section>
-//       <section>
-//         <p>This website is under construction.</p>
-//         <p>
-//           I am in the process of building out my portfolio, so you might notice
-//           some funky things on the site. Check my progress{' '}
-//           <a
-//             href="https://github.com/hipstina/christinapadilla"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             on GitHub
-//           </a>
-//           .
-//         </p>
-//       </section>
-//     </div>
-//   )
-// }
-
-// export default Introduction

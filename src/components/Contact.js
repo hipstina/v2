@@ -3,8 +3,13 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-      <h3>Contact</h3>
-      <p>Email: hipstina@gmail.com</p>
+      <a
+        href="mailto:hipstina@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>Contact</p>
+      </a>
     </div>
   )
 }

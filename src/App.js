@@ -75,7 +75,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <main className="App">
       <Nav />
       <Switch>
         <Route
@@ -114,7 +114,7 @@ function App() {
         />
       </Switch>
       <Footer />
-    </div>
+    </main>
   )
 }
 
