@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles/App.css'
 import { Route, Switch } from 'react-router-dom'
 import Home from './screens/Home'
@@ -9,30 +9,9 @@ import ProjectDetail from './screens/ProjectDetail'
 import Projects from './screens/Projects'
 import matter from 'gray-matter'
 
-const initialState = {
-  projectPaths: {},
-  allProjects: [],
-  featured: [],
-  projectDetail: ''
-}
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'paths':
-      return { ...state, projectPaths: action.payload }
-    case 'projects':
-      return { ...state, allProjects: action.payload }
-    case 'project':
-      return { ...state, projectDetail: action.payload }
-    case 'featured':
-      return { ...state, featured: action.payload }
-    default:
-      return state
-  }
-}
-
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const [projects, setProjects] = useState([])
+  const [featured, setFeatured] = useState([])
 
   const parseMds = async (files) => {
     // PARSE FETCHED FILES W/ GRAYMATTER
@@ -46,7 +25,11 @@ function App() {
       .catch((err) => console.error(err))
       .then((n) => {
         let parsedPosts = n.map((m) => matter(m))
-        dispatch({ type: 'projects', payload: parsedPosts })
+        setProjects(parsedPosts)
+        let featuredPosts = parsedPosts.filter((project) =>
+          project.data.metadata[2].featured ? true : false
+        )
+        setFeatured(featuredPosts)
       })
   }
 
@@ -55,28 +38,16 @@ function App() {
     r.keys().forEach((item) => {
       mdfiles[item.replace('./', '')] = r(item)
     })
-    dispatch({ type: 'paths', payload: mdfiles })
     parseMds(mdfiles)
-    getFeatured()
   }
 
   useEffect(() => {
     // IMPORT MULTIPLE FILES
     // https://stackoverflow.com/questions/44607396/importing-multiple-files-in-react
-
     fetchAllMds(require.context('./content/projects', false, /\.md$/))
 
     // eslint-disable-next-line
   }, [])
-
-  const getFeatured = () => {
-    if (Object.values(state.allProjects)) {
-      let featured = state.allProjects.filter((project) =>
-        project.data.metadata[2].featured ? true : false
-      )
-      dispatch({ type: 'featured', payload: featured })
-    }
-  }
 
   return (
     <main className="App">
@@ -86,11 +57,7 @@ function App() {
           exact
           path="/"
           component={(routerProps) => (
-            <Home
-              {...routerProps}
-              featured={state.featured}
-              dispatch={dispatch}
-            />
+            <Home {...routerProps} featured={featured} />
           )}
         />
         <Route exact path="/about" component={About} />
@@ -99,21 +66,13 @@ function App() {
           exact
           path="/projects"
           component={(routerProps) => (
-            <Projects
-              {...routerProps}
-              allProjects={state.allProjects}
-              dispatch={dispatch}
-            />
+            <Projects {...routerProps} projects={projects} />
           )}
         />
         <Route
-          exact
           path="/projects/:name"
           component={(routerProps) => (
-            <ProjectDetail
-              {...routerProps}
-              projectDetail={state.projectDetail}
-            />
+            <ProjectDetail {...routerProps} projects={projects} />
           )}
         />
       </Switch>
