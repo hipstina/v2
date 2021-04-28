@@ -38,14 +38,16 @@ function App() {
     // PARSE FETCHED FILES W/ GRAYMATTER
     // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
 
-    const posts = await Promise.all(
+    await Promise.all(
       Object.values(files).map((path) =>
         fetch(path.default).then((res) => res.text())
       )
-    ).catch((err) => console.error(err))
-    let parsedPosts = posts.map((post) => matter(post))
-
-    await dispatch({ type: 'projects', payload: parsedPosts })
+    )
+      .catch((err) => console.error(err))
+      .then((n) => {
+        let parsedPosts = n.map((m) => matter(m))
+        dispatch({ type: 'projects', payload: parsedPosts })
+      })
   }
 
   const fetchAllMds = (r) => {
@@ -55,13 +57,15 @@ function App() {
     })
     dispatch({ type: 'paths', payload: mdfiles })
     parseMds(mdfiles)
+    getFeatured()
   }
 
   useEffect(() => {
     // IMPORT MULTIPLE FILES
     // https://stackoverflow.com/questions/44607396/importing-multiple-files-in-react
+
     fetchAllMds(require.context('./content/projects', false, /\.md$/))
-    getFeatured()
+
     // eslint-disable-next-line
   }, [])
 

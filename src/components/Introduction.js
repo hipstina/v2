@@ -8,13 +8,16 @@ const Introduction = (props) => {
   const [intro, setIntro] = useState('')
   useEffect(() => {
     // load md into react: https://stackoverflow.com/a/53975297/6055581
+    let isMounted = true
     fetch(introText)
       .then((res) => res.text())
       .then((text) => {
         let gmtext = matter(text)
-        setIntro(gmtext)
+        if (isMounted) setIntro(gmtext)
       })
       .catch((err) => console.error(err))
+
+    return () => (isMounted = false)
 
     // eslint-disable-next-line
   }, [])

@@ -16,7 +16,7 @@ details:
 title: 'Colormind v5'
 summary: 'A color contrast checker and library'
 tech_stack: ['React', 'Express', 'Node.js', 'MongoDB']
-thumbnail: ''
+thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 
 # This is a title
