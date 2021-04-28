@@ -16,27 +16,26 @@ const Projects = (props) => {
     <main>
       <section className="featured-projects-wrapper">
         <h2>Projects</h2>
-        {allProjects.map(
-          (project, idx) => (
-            console.log(project),
-            (
-              <div
-                key={idx}
-                onClick={() =>
-                  renderDetails(project, project.title, project.metadata.id)
-                }
-              >
-                <ProjectCard
-                  {...props}
-                  title={project.title}
-                  summary={project.summary}
-                  thumbnail={project.thumbnail}
-                  tech_stack={project.tech_stack}
-                />
-              </div>
-            )
-          )
-        )}
+        {allProjects.map((project, idx) => (
+          <div
+            key={idx}
+            onClick={() =>
+              renderDetails(
+                project,
+                project.data.title,
+                project.data.metadata.id
+              )
+            }
+          >
+            <ProjectCard
+              {...props}
+              title={project.data.title}
+              summary={project.data.summary}
+              thumbnail={project.data.thumbnail}
+              tech_stack={project.data.tech_stack}
+            />
+          </div>
+        ))}
       </section>
     </main>
   )
