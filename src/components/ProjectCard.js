@@ -1,19 +1,16 @@
+import { render } from '@testing-library/react'
 import React from 'react'
+import '../styles/components/ProjectCard.css'
 
 const ProjectCard = (props) => {
   const { title, summary, thumbnail, tech_stack } = props
 
-  const renderDetailPage = () => {}
-
   return (
-    <div className="project-card" onClick={renderDetailPage}>
-      <h3>{title}</h3>
-      <img src={thumbnail} alt={`${title} preview`} />
-      <p>Project summary: {summary}</p>
-      <button onClick={() => props.history.push(`/projects/${props.title}`)}>
-        View More
-      </button>
-      <ul>
+    <div className="projectcard__wrapper">
+      <h3 className="projectcard__title">{title}</h3>
+      <p className="projectcard__summary">{summary}</p>
+
+      <ul className="projectcard__stack__wrapper">
         {tech_stack &&
           tech_stack.map((tech, idx) =>
             tech ? <li key={idx}>{tech}</li> : null

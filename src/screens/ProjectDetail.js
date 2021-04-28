@@ -5,7 +5,8 @@ const ProjectDetail = (props) => {
 
   useEffect(() => {
     matchProj()
-  }, [])
+    // eslint-disable-next-line
+  }, [props.match.params.name])
 
   const matchProj = () => {
     let match = props.projects.filter((project) => {

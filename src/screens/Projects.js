@@ -13,7 +13,7 @@ const Projects = (props) => {
 
   return (
     <main>
-      <section className="featured-projects-wrapper">
+      <section className="projects__wrapper">
         <h2>Projects</h2>
         {projects.map((project, idx) => (
           <div

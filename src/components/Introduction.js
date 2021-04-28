@@ -3,6 +3,7 @@ import introText from '../content/intro/intro.md'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import '../styles/components/Intro.css'
 
 const Introduction = (props) => {
   const [intro, setIntro] = useState('')
@@ -23,9 +24,10 @@ const Introduction = (props) => {
   }, [])
 
   return (
-    <section>
+    <section className="intro__wrapper">
       {intro ? (
         <ReactMarkdown
+          className="intro__content"
           remarkPlugins={[gfm]}
           components={{
             a: ({ node, ...props }) => (
@@ -37,6 +39,11 @@ const Introduction = (props) => {
               >
                 {props.children[0]}
               </a>
+            ),
+            blockquote: ({ node, ...props }) => (
+              <blockquote className="intro__blockquote" {...props}>
+                {props.children}
+              </blockquote>
             )
           }}
         >

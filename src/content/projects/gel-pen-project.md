@@ -2,7 +2,7 @@
 metadata:  
   - id: 7 
   - version: '1.0.0' 
-  - featured: false 
+  - featured: true 
   - date_launched: 'April 26, 2021' 
 details: 
   - source_code: 'https://github.com/hipstina/gel-pen'

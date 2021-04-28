@@ -14,7 +14,7 @@ details:
   - images: ['']
   - description: "This is a full-stack MERN application in the form of a Blog App that will allow users to create and view posts."
 title: 'Gooser'
-summary: 'MERN stack mini-blog '
+summary: 'A mini blog app built during a 24-hour Hackathon.'
 tech_stack: ['React', 'Express', 'Node.js', 'MongoDB']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
