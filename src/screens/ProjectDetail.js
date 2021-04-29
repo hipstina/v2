@@ -77,13 +77,16 @@ const ProjectDetail = (props) => {
             </div>
           </section>
 
-          <section>
+          <section className="project__details__content">
             <h3>Overview </h3>
             <p>{project[0].data.details[7].description}</p>
 
             <h3>Purpose & Goal</h3>
+            <code>coming soon</code>
             <h3>Thought process</h3>
+            <code>coming soon</code>
             <h3>Takeaways</h3>
+            <code>coming soon</code>
           </section>
         </div>
       ) : (

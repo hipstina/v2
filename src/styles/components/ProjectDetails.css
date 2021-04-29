@@ -88,3 +88,9 @@
 .project__details__meta__listitem:last-of-type:after {
   content: '   ';
 }
+
+.project__details__content {
+  max-width: 65ch;
+  margin: 100px auto 0 auto;
+  padding: 15px;
+}
