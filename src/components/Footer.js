@@ -1,5 +1,6 @@
 import React from 'react'
 import Contact from './Contact'
+import '../styles/components/Footer.css'
 
 const Footer = () => {
   const socials = [
@@ -8,20 +9,23 @@ const Footer = () => {
     'https://codepen.io/hipstina'
   ]
   return (
-    <footer>
+    <footer className="footer__container">
+      <div className="footer__copyright">© 2021 Christina Padilla</div>
       <Contact />
 
-      <div>© 2021 Christina Padilla</div>
-      <div>
-        Links
-        <ul>
-          {socials.map((link, i) => (
-            <a key={i} href={link} target="_blank" rel="noopener noreferrer">
-              <li>{link.substring(8, 15)}</li>
-            </a>
-          ))}
-        </ul>
-      </div>
+      <ul className="footer__socials__wrapper">
+        {socials.map((link, i) => (
+          <a
+            key={i}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__socials__item"
+          >
+            <li>{link.substring(8, 15)}</li>
+          </a>
+        ))}
+      </ul>
     </footer>
   )
 }
