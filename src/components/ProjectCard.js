@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/components/ProjectCard.css'
 
 const ProjectCard = (props) => {
-  const { title, summary, tech_stack } = props
+  const { title, summary, tech_stack, date } = props
 
   return (
     <div className="projectcard__wrapper">

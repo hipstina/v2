@@ -3,6 +3,7 @@
 }
 
 .projects__wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(auto, 100%);
@@ -34,4 +35,17 @@
   .projects__label {
     margin: 0 auto;
   }
+}
+
+.projects__project_date {
+  position: absolute;
+  right: 0;
+  padding: 15px;
+  margin: 15px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: normal;
+  font-size: 12px;
+  color: #888888;
 }

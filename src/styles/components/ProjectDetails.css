@@ -26,8 +26,8 @@
   flex-flow: column wrap;
   justify-content: space-between;
 
-  border-top: 1px solid #444444;
-  border-bottom: 1px solid #444444;
+  border-top: 1px dotted rgb(175, 174, 174);
+  border-bottom: 1px dotted rgb(175, 174, 174);
 }
 
 @media only screen and (min-width: 955px) {
@@ -39,7 +39,7 @@
 }
 
 .project__details__meta {
-  border-left: 1px solid #444444;
+  border-left: 1px dotted rgb(175, 174, 174);
   flex: 0 0 33%;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .project__details__meta__item {
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px dotted rgb(175, 174, 174);
   padding: 30px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .project__details__meta__item:first-of-type {
-  border-top: 1px solid #444444;
+  border-top: 1px dotted rgb(175, 174, 174);
 }
 
 @media only screen and (min-width: 955px) {
