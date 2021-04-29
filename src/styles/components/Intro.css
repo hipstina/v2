@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 800px) {
   .intro__content h3 {
-    flex: 0 0 40%;
+    flex: 0 0 36%;
   }
 }
 
@@ -55,6 +55,36 @@
 .intro__content p img {
   width: 85vw;
   margin: 0 auto;
+
+  background: linear-gradient(
+      67.09deg,
+      rgba(217, 250, 28, 0.9) 3%,
+      rgba(252, 255, 101, 0) 37.99%
+    ),
+    linear-gradient(132.34deg, #f59e6c 25.23%, rgba(70, 255, 188, 0.08) 60.88%),
+    linear-gradient(
+      155.09deg,
+      #263aaa 1.14%,
+      rgba(245, 133, 208, 0.86) 13.44%,
+      rgba(196, 141, 233, 0.86) 72.8%,
+      rgba(15, 12, 182, 0.58) 99.02%
+    );
+}
+
+.intro__content p img:hover {
+  background: linear-gradient(
+      77.09deg,
+      rgba(153, 93, 250, 0.9) 0%,
+      rgba(252, 255, 101, 0) 37.99%
+    ),
+    linear-gradient(132.34deg, #6a9eff 25.23%, rgba(70, 255, 188, 0.08) 60.88%),
+    linear-gradient(
+      155.09deg,
+      #fcff6d 1.14%,
+      rgba(220, 208, 101, 0.86) 33.44%,
+      rgba(236, 121, 175, 0.86) 62.8%,
+      rgba(182, 108, 238, 0.58) 99.02%
+    );
 }
 
 @media only screen and (min-width: 500px) {
