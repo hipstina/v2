@@ -19,4 +19,17 @@ tech_stack: ['JavaScript', 'HTML', 'CSS']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 
-# This is a title
+## Overview
+
+My spin on the popular the NYT word game. A puzzle optimized to reward players for using coarse language. 
+
+## Purpose & Goal
+`coming soon`
+
+
+## Thought process
+`coming soon`
+
+
+## Takeaways
+`coming soon`

@@ -19,4 +19,17 @@ tech_stack: ['React', 'Express', 'Node.js', 'MongoDB']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 
-# This is another title
+## Overview
+
+A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. Key feature: Client side tools fetch and filter beers styles from an API.
+
+## Purpose & Goal
+`coming soon`
+
+
+## Thought process
+`coming soon`
+
+
+## Takeaways
+`coming soon`

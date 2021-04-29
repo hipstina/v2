@@ -19,4 +19,17 @@ tech_stack: ['React', 'Express', 'Node.js', 'MongoDB']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 
-# This is a title
+## Overview
+
+This is a full-stack MERN application in the form of a Blog App that will allow users to create and view posts.
+
+## Purpose & Goal
+`coming soon`
+
+
+## Thought process
+`coming soon`
+
+
+## Takeaways
+`coming soon`

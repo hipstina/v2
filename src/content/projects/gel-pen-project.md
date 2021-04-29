@@ -19,4 +19,17 @@ tech_stack: ['React', 'Flask-SQLAlchemy', 'Redux']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 
-# This is a title
+## Overview
+
+Gel Pen is an app for building beautiful syntax highlighting themes. With the Gel Pen editor, you can mock up your own syntax highlighting theme from scratch and begin using your theme immediately for all of your code snippets. Browse our library of themes to see what other users have made, like your favorites, and leave reviews of ones you've used.
+
+## Purpose & Goal
+`coming soon`
+
+
+## Thought process
+`coming soon`
+
+
+## Takeaways
+`coming soon`
