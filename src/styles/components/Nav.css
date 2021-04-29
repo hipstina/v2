@@ -1,0 +1,37 @@
+.nav__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 45px;
+  padding: 30px;
+}
+
+:any-link {
+  text-decoration: none;
+}
+.nav__pages a,
+.nav__pages a:visited {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  margin: 0 30px;
+}
+
+.nav__pages .active::after {
+  content: ' • ';
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  color: rgb(255, 0, 111);
+}
+
+.nav__home,
+.nav__home:visited {
+  position: relative;
+  color: black;
+  font-size: 24px;
+}
