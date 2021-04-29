@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import '../styles/components/ProjectDetails.css'
 
 const ProjectDetail = (props) => {
   const [project, setProject] = useState([])
@@ -22,44 +23,58 @@ const ProjectDetail = (props) => {
   return (
     <div>
       {project[0] ? (
-        <div>
-          <section>
-            <h2>{project[0].data.title}</h2>
-            <p>{project[0].data.summary}</p>
-            <p>Type: {project[0].data.details[4].organization}</p>
-            <p>Role:</p>
-            <ul>
-              {project[0].data.details[2].roles.map((role, i) => (
-                <li key={i}>{role}</li>
-              ))}
-            </ul>
-            <p>Stack:</p>
-            <ul>
-              {project[0].data.tech_stack.map((stack, i) => (
-                <li key={i}>{stack}</li>
-              ))}
-            </ul>
-            <p>
-              Demo:{' '}
-              <a
-                href={project[0].data.details[1].demo[0]}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{project[0].data.details[1].demo[0]}</span>
-              </a>
-            </p>
-
-            <p>
-              Source code:{' '}
-              <a
-                href={project[0].data.details[0].source_code}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{project[0].data.details[0].source_code}</span>
-              </a>
-            </p>
+        <div className="project__details__wrapper">
+          <section className="project__details__meta__wrapper">
+            <div className="project__details__title">
+              <h1>{project[0].data.title}</h1>
+              <p>{project[0].data.summary}</p>
+            </div>
+            <div className="project__details__meta">
+              <div className="project__details__meta__item">
+                <p>Type: </p>
+                <span>{project[0].data.details[4].organization}</span>
+              </div>
+              <div className="project__details__meta__item">
+                <p>Role:</p>
+                <ul className="project__details__meta__list">
+                  {project[0].data.details[2].roles.map((role, i) => (
+                    <li key={i} className="project__details__meta__listitem">
+                      {role}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="project__details__meta__item">
+                <p>Stack:</p>
+                <ul className="project__details__meta__list">
+                  {project[0].data.tech_stack.map((stack, i) => (
+                    <li key={i} className="project__details__meta__listitem">
+                      {stack}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="project__details__meta__item">
+                <p>Demo: </p>
+                <a
+                  href={project[0].data.details[1].demo[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{project[0].data.details[1].demo[0]}</span>
+                </a>
+              </div>
+              <div className="project__details__meta__item">
+                <p>Source code: </p>
+                <a
+                  href={project[0].data.details[0].source_code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{project[0].data.details[0].source_code}</span>
+                </a>
+              </div>
+            </div>
           </section>
 
           <section>
