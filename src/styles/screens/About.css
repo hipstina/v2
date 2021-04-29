@@ -1,0 +1,19 @@
+.about__wrapper {
+  max-width: 60ch;
+  margin: 100px auto 30px auto;
+  padding: 15px;
+}
+
+.about__wrapper img {
+  max-width: 200px;
+  margin-top: 45px;
+}
+
+.about__label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  margin: 0 0 60px 0;
+}

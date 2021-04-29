@@ -3,6 +3,7 @@ import aboutMe from '../content/about/about.md'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import '../styles/screens/About.css'
 
 const About = () => {
   const [about, setAbout] = useState('')
@@ -20,7 +21,8 @@ const About = () => {
   }, [])
 
   return (
-    <div>
+    <div className="about__wrapper">
+      <h1 className="about__label">A little about me</h1>
       {about ? (
         <ReactMarkdown remarkPlugins={[gfm]}>{about.content}</ReactMarkdown>
       ) : (

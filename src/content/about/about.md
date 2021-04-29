@@ -8,7 +8,7 @@ summary: 'About christina'
 thumbnail: ''
 ---
 
-# About 
+
 
 Back when I still shared a computer with all of my brothers, I remember learning just enough CSS to update my MySpace profile. What started as a hobby grew into a part-time job updating e-courses for my university, and later as tech support for a web startup. 
 

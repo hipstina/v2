@@ -14,7 +14,7 @@ const Projects = (props) => {
 
   return (
     <div className="projects__container">
-      <h2 className="projects__label">A bunch of my projects</h2>
+      <h2 className="projects__label">A bunch of things I've worked on</h2>
       <section className="projects__wrapper">
         {projects.map((project, idx) => (
           <div
