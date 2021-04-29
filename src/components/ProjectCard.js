@@ -1,9 +1,8 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 import '../styles/components/ProjectCard.css'
 
 const ProjectCard = (props) => {
-  const { title, summary, thumbnail, tech_stack } = props
+  const { title, summary, tech_stack } = props
 
   return (
     <div className="projectcard__wrapper">
@@ -13,7 +12,11 @@ const ProjectCard = (props) => {
       <ul className="projectcard__stack__wrapper">
         {tech_stack &&
           tech_stack.map((tech, idx) =>
-            tech ? <li key={idx}>{tech}</li> : null
+            tech ? (
+              <li key={idx} className="projectcard__stacK__item">
+                {tech}
+              </li>
+            ) : null
           )}
       </ul>
     </div>

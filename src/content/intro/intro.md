@@ -17,4 +17,3 @@ thumbnail: ''
 
 
 
-> **This website is under construction.** *I am in the process of building out my portfolio, so you might notice some funky things on the site. Check my progress on [GitHub](https://github.com/hipstina/v2).*

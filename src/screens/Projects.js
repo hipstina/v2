@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
+import '../styles/screens/Projects.css'
 
 const Projects = (props) => {
   const { projects } = props
@@ -12,9 +13,9 @@ const Projects = (props) => {
   }
 
   return (
-    <main>
+    <div className="projects__container">
+      <h2 className="projects__label">A bunch of my projects</h2>
       <section className="projects__wrapper">
-        <h2>Projects</h2>
         {projects.map((project, idx) => (
           <div
             key={idx}
@@ -37,7 +38,7 @@ const Projects = (props) => {
           </div>
         ))}
       </section>
-    </main>
+    </div>
   )
 }
 
