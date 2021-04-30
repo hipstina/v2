@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import ProjectDetail from './screens/ProjectDetail'
 import Projects from './screens/Projects'
+import NotFoundPage from './screens/NotFoundPage.js'
 import matter from 'gray-matter'
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
             <ProjectDetail {...routerProps} projects={projects} />
           )}
         />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
       <Footer />
     </main>
