@@ -46,7 +46,9 @@ const Projects = (props) => {
               />
             </div>
           ))
-          .sort((a, b) => new Date(a.props.date) < new Date(b.props.date))}
+          .sort((a, b) =>
+            new Date(a.props.date) < new Date(b.props.date) ? 1 : -1
+          )}
       </section>
     </div>
   )

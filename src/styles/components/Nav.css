@@ -55,7 +55,8 @@
   font-size: 24px;
 }
 .nav__pages a:hover,
-:any-link:hover {
+:any-link:hover,
+footer a p:hover {
   color: rgb(255, 0, 111);
 }
 
