@@ -7,10 +7,10 @@ metadata:
 details: 
   - source_code: 'https://github.com/hipstina/little-editor'
   - demo: ['https://hipstina.github.io/little-editor/']
-  - roles: ['front-end development', 'visual design']
+  - roles: ['Front-end Development', 'Visual Design']
   - status: 'Launched'
   - organization: 'Personal'
-  - collaborators: ['']
+  - collaborators: []
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/little-editor.png']
   - description: "My Little Editor is a tool for editing and previewing simple HTML markup. Key feature: Raw text can be edited and preview window will automatically display the rendered HTML."
 title: 'My Little Editor'

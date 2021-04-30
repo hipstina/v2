@@ -56,15 +56,38 @@ const ProjectDetail = (props) => {
                   ))}
                 </ul>
               </div>
+              {project[0].data.details[5].collaborators.length > 0 ? (
+                <div className="project__details__meta__item">
+                  <p>Collaborators: </p>
+                  {project[0].data.details[5].collaborators.map((peer, i) => (
+                    <a
+                      key={i}
+                      href={peer}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="fa fa-github" aria-hidden="true"></span>
+                      <span className="project__details__meta__collaborators">
+                        {' '}
+                        {peer.split('/')[3]}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              ) : null}
               <div className="project__details__meta__item">
                 <p>Demo: </p>
-                <a
-                  href={project[0].data.details[1].demo[0]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span>{project[0].data.details[1].demo[0]}</span>
-                </a>
+                {project[0].data.details[1].demo[0].length > 0 ? (
+                  <a
+                    href={project[0].data.details[1].demo[0]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>{project[0].data.details[1].demo[0]}</span>
+                  </a>
+                ) : (
+                  <span>Coming soon </span>
+                )}
               </div>
               <div className="project__details__meta__item">
                 <p>Source code: </p>

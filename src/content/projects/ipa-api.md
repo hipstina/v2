@@ -7,10 +7,10 @@ metadata:
 details: 
   - source_code: 'https://github.com/hipstina/ipa-api'
   - demo: ['https://hipstina.github.io/ipa-api/']
-  - roles: ['front-end development', 'visual design']
+  - roles: ['Front-end Development', 'Visual Design']
   - status: 'Launched'
   - organization: 'Personal'
-  - collaborators: ['']
+  - collaborators: []
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/ipa-api.png']
   - description: "A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. Key feature: Client side tools fetch and filter beers styles from an API."
 title: 'IPA API'

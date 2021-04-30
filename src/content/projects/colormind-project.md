@@ -7,10 +7,10 @@ metadata:
 details: 
   - source_code: 'https://github.com/hipstina/colormind'
   - demo: ['https://thawing-journey-31052.herokuapp.com/']
-  - roles: ['backend development', 'front-end development', 'visual design']
+  - roles: ['Backend Development', 'Front-end Development', 'Visual Design']
   - status: 'Launched'
   - organization: 'General Assembly'
-  - collaborators: ['']
+  - collaborators: []
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/colormind.png']
   - description: "Colormind is a tool for choosing the best combination of colors that are already part of your brand's color palette. Simple enter in two colors to view their contrast score. If you like a combo, save it to the Colormind collection. You can also view a curated selection of accessible color palettes in the Colormind collection."
 title: 'Colormind'

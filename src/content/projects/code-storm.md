@@ -7,9 +7,9 @@ metadata:
 details: 
   - source_code: 'https://github.com/NickWill24/code_storm'
   - demo: ['']
-  - roles: ['front-end development', 'visual design']
+  - roles: ['Front-end Development', 'Visual Design']
   - status: 'In Development'
-  - organization: 'General Assembly'
+  - organization: 'General Assembly Hackathon'
   - collaborators: ['https://github.com/NickWill24']
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/code-storm.png']
   - description: "New developers face this problem sooner or later: what should I build for my next project? Code Storm solves this problem by providing a forum for submitting and upvoting full-stack app ideas. As a submission gets more upvotes, their ranking goes up."

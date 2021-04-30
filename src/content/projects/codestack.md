@@ -7,7 +7,7 @@ metadata:
 details: 
   - source_code: 'https://github.com/f-ansari/code_stack'
   - demo: ['https://obscure-mountain-15765.herokuapp.com/']
-  - roles: ['front-end development']
+  - roles: ['Front-end Development']
   - status: 'Launched'
   - organization: 'General Assembly'
   - collaborators: ['https://github.com/NickWill24','https://github.com/f-ansari','https://github.com/LukeArenas']

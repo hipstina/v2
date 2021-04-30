@@ -7,9 +7,9 @@ metadata:
 details: 
   - source_code: 'https://github.com/hipstina/gooser'
   - demo: ['https://fast-stream-31367.herokuapp.com/']
-  - roles: ['Git lord', 'front-end development']
+  - roles: ['GitHub Lead', 'Front-end Development']
   - status: 'Launched'
-  - organization: 'General Assembly'
+  - organization: 'General Assembly Hackathon'
   - collaborators: ['https://github.com/andrewliu1988','https://github.com/f-ansari','https://github.com/JYoung554']
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/gooser.png']
   - description: "This is a full-stack MERN application in the form of a Blog App that will allow users to create and view posts."

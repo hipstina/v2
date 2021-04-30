@@ -7,10 +7,10 @@ metadata:
 details: 
   - source_code: 'https://github.com/hipstina/spelling-bleep'
   - demo: ['https://goofy-goose.surge.sh/ ']
-  - roles: ['front-end development', 'visual design']
+  - roles: ['Front-end Development', 'Visual Design']
   - status: 'Launched'
   - organization: 'General Assembly'
-  - collaborators: ['']
+  - collaborators: []
   - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/spelling-bleep.png']
   - description: "My spin on the popular the NYT word game. A puzzle optimized to reward players for using coarse language. "
 title: 'Spelling Bleep'

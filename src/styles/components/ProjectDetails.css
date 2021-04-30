@@ -1,16 +1,15 @@
-.project__details__wrapper {
-  /* max-width: 65ch;
-  margin: 0 auto; */
-}
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
 .project__details__title {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 45px 11vw 30px 45px;
+  max-width: 500px;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1300px) {
   .project__details__title {
     padding: 45px 23vw 30px 45px;
   }
@@ -84,13 +83,18 @@
 
 .project__details__meta__listitem {
   display: inline-block;
-  margin-right: 5px;
+  margin: 5px;
 }
 .project__details__meta__listitem:after {
   content: ',   ';
 }
 .project__details__meta__listitem:last-of-type:after {
   content: '   ';
+}
+
+.project__details__meta__collaborators {
+  display: inline-block;
+  margin: 0 15px 0 5px;
 }
 
 .project__details__content__wrapper {
@@ -132,7 +136,10 @@
   max-width: 500px;
   min-width: 300px;
   margin: 45px auto 0 auto;
-  border: 1px dotted rgb(175, 174, 174);
+  /* border: 1px dotted rgb(175, 174, 174); */
+  border-radius: 10px;
+
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .project__details__content {
