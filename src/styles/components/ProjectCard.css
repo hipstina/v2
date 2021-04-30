@@ -5,8 +5,8 @@
 
   height: 240px;
   padding: 30px;
-  /* margin: 5px 5px 0 0; */
   cursor: pointer;
+
   border-left: 1px dotted rgb(175, 174, 174);
   border-bottom: 1px dotted rgb(175, 174, 174);
 }

@@ -55,7 +55,9 @@
 .intro__content p img {
   width: 87vw;
   margin: 0 auto;
-  border: 1px dotted rgb(175, 174, 174);
+  /* border: 1px dotted rgb(175, 174, 174); */
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 10px 40px rgba(0, 0, 0, 0.2);
 
   background: linear-gradient(
       67.09deg,

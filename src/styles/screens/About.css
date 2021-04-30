@@ -7,7 +7,8 @@
 .about__wrapper img {
   max-width: 200px;
   margin-top: 45px;
-  border: 1px dotted rgb(175, 174, 174);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .about__label {
