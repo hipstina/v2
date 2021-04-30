@@ -15,19 +15,19 @@ const Footer = () => {
 
       <ul className="footer__socials__wrapper">
         {socials.map((link, i) => (
-          <a
-            key={i}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__socials__item"
-          >
-            <li>
+          <li>
+            <a
+              key={i}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__socials__item"
+            >
               {link.substring(8, 15)[link.substring(8, 15).length - 1] === '.'
                 ? link.substring(8, 14)
                 : link.substring(8, 15)}
-            </li>
-          </a>
+            </a>
+          </li>
         ))}
       </ul>
     </footer>

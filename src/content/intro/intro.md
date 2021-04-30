@@ -10,7 +10,7 @@ thumbnail: ''
 
 # I'm Christina, a full-stack developer based in Chicago.
 
-### I cultivated an interest in web development after several years of working as a tech support specialist. Here are some things I've made!
+## I cultivated an interest in web development after several years of working as a tech support specialist. Here are some things I've made!
 
 
 ![Homemade headshot. Styled in halftone dots.](https://raw.githubusercontent.com/hipstina/v2/main/src/assets/profile-homepage.png)

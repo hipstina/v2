@@ -22,7 +22,7 @@
   text-align: left;
 }
 
-.intro__content h3 {
+.intro__content h2 {
   font-size: 20px;
   font-weight: 500;
   padding: 30px 0;
@@ -30,8 +30,8 @@
 }
 
 @media only screen and (min-width: 500px) {
-  .intro__content h3 {
-    flex: 0 0 50%;
+  .intro__content h2 {
+    flex: 0 0 45%;
   }
 }
 
