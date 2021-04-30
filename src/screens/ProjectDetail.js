@@ -79,10 +79,18 @@ const ProjectDetail = (props) => {
             </div>
           </section>
 
-          <section className="project__details__content">
-            <ReactMarkdown remarkPlugins={[gfm]}>
-              {project[0].content}
-            </ReactMarkdown>
+          <section className="project__details__content__wrapper">
+            <div className="project__details__stickyimg">
+              <img
+                src={project[0].data.details[6].images[0]}
+                alt={project[0].data.title + ' homepage '}
+              />
+            </div>
+            <div className="project__details__content">
+              <ReactMarkdown remarkPlugins={[gfm]}>
+                {project[0].content}
+              </ReactMarkdown>
+            </div>
           </section>
         </div>
       ) : (

@@ -11,7 +11,7 @@ details:
   - status: 'Launched'
   - organization: 'General Assembly'
   - collaborators: ['https://github.com/NickWill24','https://github.com/f-ansari','https://github.com/LukeArenas']
-  - images: ['']
+  - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/code-stack.png']
   - description: "CodeStack is a fun and interactive educational tool that allows users to create their custom decks of flashcards. Each flashcard will enable the user to input the title, code block, and notes, as well as selecting the coding language being reviewed. In addition to their own sets, users will also be able to see and interact with decks that other users have created. Coding just got a whole lot easier."
 title: 'CodeStack'
 summary: 'A full-stack PERN app to create digital flashcards with a mini code editor.'

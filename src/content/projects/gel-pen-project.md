@@ -11,7 +11,7 @@ details:
   - status: 'Launched'
   - organization: 'General Assembly'
   - collaborators: ['']
-  - images: ['']
+  - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/gel-pen.png']
   - description: "Gel Pen is an app for building beautiful syntax highlighting themes. With the Gel Pen editor, you can mock up your own syntax highlighting theme from scratch and begin using your theme immediately for all of your code snippets. Browse our library of themes to see what other users have made, like your favorites, and leave reviews of ones you've used."
 title: 'Gel Pen'
 summary: 'A full-stack app for building syntax highlighting themes. '

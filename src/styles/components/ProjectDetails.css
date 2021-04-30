@@ -89,8 +89,50 @@
   content: '   ';
 }
 
+.project__details__content__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  max-width: 90ch;
+  margin: 60px auto 0 auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .project__details__content__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.project__details__stickyimg {
+  position: static;
+  top: 0px;
+  height: 300px;
+  padding: 0 15px;
+  margin: 0 auto 135px auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .project__details__stickyimg {
+    position: sticky;
+    top: 15px;
+    height: 300px;
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+.project__details__stickyimg img {
+  width: 25vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 45px auto 0 auto;
+  border: 1px dotted rgb(175, 174, 174);
+}
+
 .project__details__content {
   max-width: 65ch;
-  margin: 100px auto 0 auto;
+  margin: 0 15px;
   padding: 15px;
 }

@@ -11,7 +11,7 @@ details:
   - status: 'Launched'
   - organization: 'General Assembly'
   - collaborators: ['https://github.com/andrewliu1988','https://github.com/f-ansari','https://github.com/JYoung554']
-  - images: ['']
+  - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/gooser.png']
   - description: "This is a full-stack MERN application in the form of a Blog App that will allow users to create and view posts."
 title: 'Gooser'
 summary: 'A mini blog app built during a 24-hour Hackathon.'

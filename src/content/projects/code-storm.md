@@ -11,7 +11,7 @@ details:
   - status: 'In Development'
   - organization: 'General Assembly'
   - collaborators: ['https://github.com/NickWill24']
-  - images: ['']
+  - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/code-storm.png']
   - description: "New developers face this problem sooner or later: what should I build for my next project? Code Storm solves this problem by providing a forum for submitting and upvoting full-stack app ideas. As a submission gets more upvotes, their ranking goes up."
 title: 'Code Storm'
 summary: 'A full-stack app for upvoting full-stack app ideas, built for a 24-hour Hackathon.'

@@ -11,7 +11,7 @@ details:
   - status: 'Launched'
   - organization: 'General Assembly'
   - collaborators: ['']
-  - images: ['']
+  - images: ['https://raw.githubusercontent.com/hipstina/v2/main/src/assets/spelling-bleep.png']
   - description: "My spin on the popular the NYT word game. A puzzle optimized to reward players for using coarse language. "
 title: 'Spelling Bleep'
 summary: 'A low-brow version of the NYT spelling bee game. '
