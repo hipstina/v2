@@ -15,7 +15,7 @@ details:
   - description: "New developers face this problem sooner or later: what should I build for my next project? Code Storm solves this problem by providing a forum for submitting and upvoting full-stack app ideas. As a submission gets more upvotes, their ranking goes up."
 title: 'Code Storm'
 summary: 'A full-stack app for upvoting full-stack app ideas, built for a 24-hour Hackathon.'
-tech_stack: ['React', 'Flask', 'Redux']
+tech_stack: ['React', 'Flask', 'SQLAlchemy','Redux']
 thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 ---
 

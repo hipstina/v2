@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
+    <div className="footer__contact">
       <a
         href="mailto:hipstina@gmail.com"
         target="_blank"

@@ -24,7 +24,7 @@
 
 .intro__content h3 {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   padding: 30px 0;
   margin: 0 0 30px 0;
 }
@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 800px) {
   .intro__content h3 {
-    flex: 0 0 36%;
+    flex: 0 0 45%;
   }
 }
 
@@ -53,8 +53,9 @@
 }
 
 .intro__content p img {
-  width: 85vw;
+  width: 87vw;
   margin: 0 auto;
+  border: 1px dotted rgb(175, 174, 174);
 
   background: linear-gradient(
       67.09deg,

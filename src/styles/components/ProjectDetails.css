@@ -58,6 +58,10 @@
   padding: 30px;
 }
 
+.project__details__meta__item a {
+  padding: 5px;
+}
+
 .project__details__meta__item:last-of-type {
   border-bottom: 1px solid transparent;
 }
@@ -125,7 +129,7 @@
 
 .project__details__stickyimg img {
   width: 25vw;
-  max-width: 450px;
+  max-width: 500px;
   min-width: 300px;
   margin: 45px auto 0 auto;
   border: 1px dotted rgb(175, 174, 174);

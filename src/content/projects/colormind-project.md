@@ -21,7 +21,7 @@ thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 
 ## Overview
 
-A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. Key feature: Client side tools fetch and filter beers styles from an API.
+Colormind is a tool for choosing the best combination of colors that are already part of your brand's color palette. Simple enter in two colors to view their contrast score. If you like a combo, save it to the Colormind collection. You can also view a curated selection of accessible color palettes in the Colormind collection.
 
 ## Purpose & Goal
 `coming soon`

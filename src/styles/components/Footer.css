@@ -23,7 +23,6 @@
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-weight: normal;
   font-size: 16px;
   color: black;
   line-height: 1.6;
@@ -45,4 +44,10 @@
 
 .footer__socials__item {
   margin: 15px;
+  padding: 5px;
+}
+
+.footer__contact p {
+  margin: 15px;
+  padding: 5px;
 }

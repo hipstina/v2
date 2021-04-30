@@ -22,7 +22,11 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="footer__socials__item"
           >
-            <li>{link.substring(8, 15)}</li>
+            <li>
+              {link.substring(8, 15)[link.substring(8, 15).length - 1] === '.'
+                ? link.substring(8, 14)
+                : link.substring(8, 15)}
+            </li>
           </a>
         ))}
       </ul>

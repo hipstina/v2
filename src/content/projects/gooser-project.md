@@ -21,7 +21,7 @@ thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 
 ## Overview
 
-This is a full-stack MERN application in the form of a Blog App that will allow users to create and view posts.
+A full-stack MERN application in the form of a Blog App that will allow users to create and view posts.
 
 ## Purpose & Goal
 `coming soon`

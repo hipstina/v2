@@ -6,7 +6,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0 15px;
+  margin: 0;
   padding: 30px;
 }
 
@@ -19,15 +19,24 @@
 :any-link {
   text-decoration: none;
 }
+
 .nav__pages a,
 .nav__pages a:visited {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-weight: normal;
+  /* font-weight: normal; */
   font-size: 16px;
   color: black;
-  margin: 0 30px;
+  margin: 0 0 0 45px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav__pages a,
+  .nav__pages a:visited {
+    margin: 0 30px;
+  }
 }
 
 .nav__pages .active::after {
@@ -35,6 +44,7 @@
   position: absolute;
   left: -20px;
   top: -5px;
+  padding: 5px;
   color: rgb(255, 0, 111);
 }
 
@@ -43,4 +53,14 @@
   position: relative;
   color: black;
   font-size: 24px;
+}
+.nav__pages a:hover,
+:any-link:hover {
+  color: rgb(255, 0, 111);
+}
+
+.nav__pages a:focus,
+footer a:focus,
+:any-link:focus {
+  outline: 1.5px solid rgb(255, 0, 111);
 }
