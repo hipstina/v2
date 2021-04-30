@@ -36,16 +36,16 @@ npm run build
 ```
 
 ## Future Updates
-[x] collaborators section
-[x] 404 page 
-[x] test accessibility
-[ ] tags for 'in development', 'hackathon', 'group project'
-[ ] content to project details 
-[ ] react helmet
-[ ] default scroll to top on redirects
-[ ] update About
-[ ] analytics
-[ ] optimize image files
+- [x] collaborators section
+- [x] 404 page 
+- [x] test accessibility
+- [ ] tags for 'in development', 'hackathon', 'group project'
+- [ ] content to project details 
+- [ ] react helmet
+- [ ] default scroll to top on redirects
+- [ ] update About
+- [ ] analytics
+- [ ] optimize image files
 
 
 ## Contributing
