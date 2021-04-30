@@ -1,13 +1,13 @@
-<h1 align="center"> ✨ </h1>
+<div align="center"> ✨ </div>
 <h1 align="center"> <a href="https://christinapadilla.com/" target="_blank">christinapadilla.com </a></h1>
 <p align="center">This is the second version of my portfolio site. It is built with React and currently hosted on nearlyfreespeech.net. </p>
-<hr>
+
 
 ![Google lighthouse rating 95 Performance, 100 Accessibility, 100 Best Practices, 100 SEO](https://raw.githubusercontent.com/hipstina/v2/9705984286e9a2784f42f4c0b47171c4e45d83e6/src/assets/lighthouse.svg "Google lighthouse rating as of April 30 2021") 
 
 Learn more about [Google Lighthouse stats](https://developers.google.com/web/tools/lighthouse/)
 
-<hr>
+
 
 *Status: Launched April 29, 2021*
 ## About
