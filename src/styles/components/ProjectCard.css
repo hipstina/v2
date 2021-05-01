@@ -2,8 +2,8 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-
-  height: 240px;
+  min-height: 200px;
+  /* max-height: 240px; */
   padding: 30px;
   cursor: pointer;
 

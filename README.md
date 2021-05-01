@@ -38,14 +38,11 @@ npm run build
 ## Future Updates
 - [x] collaborators section
 - [x] 404 page 
-- [x] test accessibility
-- [ ] tags for 'in development', 'hackathon', 'group project'
-- [ ] content to project details 
+- [x] accessibility testing
+- [ ] tags for 'status', 'type'
 - [ ] react helmet
-- [ ] default scroll to top on redirects
-- [ ] update About
-- [ ] analytics
-- [ ] optimize image files
+- [ ] default scroll to top on routing
+
 
 
 ## Contributing
