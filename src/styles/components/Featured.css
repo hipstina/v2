@@ -10,7 +10,6 @@
   margin: 0 auto;
   width: 100vw;
   border-top: 1px dotted rgb(175, 174, 174);
-  border-right: 1px dotted rgb(175, 174, 174);
 }
 
 @media only screen and (min-width: 800px) {
@@ -24,5 +23,6 @@
     -ms-flex-align: flex-start;
     margin: 0 auto;
     width: 65ch;
+    border-right: 1px dotted rgb(175, 174, 174);
   }
 }

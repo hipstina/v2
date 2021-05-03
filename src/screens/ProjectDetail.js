@@ -34,7 +34,9 @@ const ProjectDetail = (props) => {
             <div className="project__details__meta">
               <div className="project__details__meta__item">
                 <p>Type: </p>
-                <span>{project[0].data.details[4].organization}</span>
+                <span className="project__details__meta__type">
+                  {project[0].data.details[4].organization}
+                </span>
               </div>
               <div className="project__details__meta__item">
                 <p>Role:</p>
@@ -59,20 +61,26 @@ const ProjectDetail = (props) => {
               {project[0].data.details[5].collaborators.length > 0 ? (
                 <div className="project__details__meta__item">
                   <p>Collaborators: </p>
-                  {project[0].data.details[5].collaborators.map((peer, i) => (
-                    <a
-                      key={i}
-                      href={peer}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="fa fa-github" aria-hidden="true"></span>
-                      <span className="project__details__meta__collaborators">
-                        {' '}
-                        {peer.split('/')[3]}
-                      </span>
-                    </a>
-                  ))}
+                  <div className="project__details__meta__collaborators">
+                    {project[0].data.details[5].collaborators.map((peer, i) => (
+                      <a
+                        key={i}
+                        href={peer}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project__details__meta__collaborator"
+                      >
+                        <span
+                          className="fa fa-github"
+                          aria-hidden="true"
+                        ></span>
+                        <span className="project__details__meta__collaborator_link">
+                          {' '}
+                          {peer.split('/')[3]}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               ) : null}
               <div className="project__details__meta__item">

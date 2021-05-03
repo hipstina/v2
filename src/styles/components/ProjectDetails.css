@@ -57,8 +57,13 @@
   padding: 30px;
 }
 
+.project__details__meta__item ul,
+span {
+  margin: 8.5px;
+}
+
 .project__details__meta__item a {
-  padding: 5px;
+  padding: 8.5px 0 0 0;
 }
 
 .project__details__meta__item:last-of-type {
@@ -74,6 +79,9 @@
     border-top: 1px solid transparent;
   }
 }
+.fa {
+  margin: 0 0 0 8.5px;
+}
 
 .project__details__meta__list {
   list-style: none;
@@ -83,7 +91,7 @@
 
 .project__details__meta__listitem {
   display: inline-block;
-  margin: 5px;
+  margin: 0 8.5px 0 0;
 }
 .project__details__meta__listitem:after {
   content: ',   ';
@@ -93,8 +101,23 @@
 }
 
 .project__details__meta__collaborators {
-  display: inline-block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.project__details__meta__collaborator_link {
+  display: flex;
+  flex-flow: row nowrap;
   margin: 0 15px 0 5px;
+}
+
+.project__details__meta__collaborator {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 .project__details__content__wrapper {
