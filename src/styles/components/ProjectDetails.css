@@ -122,51 +122,58 @@ span {
 
 .project__details__content__wrapper {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   max-width: 90ch;
   margin: 60px auto 0 auto;
+  padding: 0 30px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .project__details__content__wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 60px auto 30vw auto;
   }
 }
 
 .project__details__stickyimg {
   position: static;
   top: 0px;
-  height: 300px;
+
+  height: 100%;
   padding: 0 15px;
-  margin: 0 auto 135px auto;
+  margin: 0 auto 45px auto;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .project__details__stickyimg {
     position: sticky;
     top: 15px;
-    height: 300px;
     padding: 0 15px;
-    margin: 0;
+    max-height: 600px;
   }
 }
 
 .project__details__stickyimg img {
-  width: 25vw;
-  max-width: 500px;
-  min-width: 300px;
+  width: 70vw;
   margin: 45px auto 0 auto;
-  /* border: 1px dotted rgb(175, 174, 174); */
   border-radius: 10px;
-
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (min-width: 800px) {
+  .project__details__stickyimg img {
+    max-width: 500px;
+    min-width: 300px;
+    width: 40vw;
+  }
+}
+
 .project__details__content {
-  max-width: 65ch;
+  max-width: 60ch;
   margin: 0 15px;
   padding: 15px;
+  flex: 0 1 50%;
 }
