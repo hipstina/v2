@@ -4,32 +4,43 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
+  /* align-content: flex-end; */
   align-items: flex-start;
-  padding: 45px 11vw 30px 45px;
-  max-width: 500px;
+  padding: 45px 21vw 30px 45px;
+  margin: 100px 0 0 0;
+  flex: 0 1 35%;
+  max-width: 450px;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   .project__details__title {
-    padding: 45px 23vw 30px 45px;
+    padding: 45px 21vw 30px 45px;
   }
 }
 
 .project__details__title h1 {
-  font-size: calc(20px + 30 * ((60vw - 100px) / 1025));
+  font-size: 40px;
   margin: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .project__details__title h1 {
+    font-size: calc(25px + 30 * ((60vw - 100px) / 1025));
+    margin: 0;
+  }
 }
 
 .project__details__meta__wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
+  align-content: flex-start;
 
   border-top: 1px dotted rgb(175, 174, 174);
   border-bottom: 1px dotted rgb(175, 174, 174);
 }
 
-@media only screen and (min-width: 955px) {
+@media only screen and (min-width: 800px) {
   .project__details__meta__wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -150,7 +161,7 @@ span {
 @media only screen and (min-width: 800px) {
   .project__details__stickyimg {
     position: sticky;
-    top: 15px;
+    top: 12vh;
     padding: 0 15px;
     max-height: 600px;
   }
