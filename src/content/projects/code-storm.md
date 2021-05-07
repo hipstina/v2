@@ -6,7 +6,7 @@ metadata:
   - date_launched: 'April 9, 2021' 
 details: 
   - source_code: 'https://github.com/NickWill24/code_storm'
-  - demo: ['']
+  - demo: ['https://code-storm.netlify.app/']
   - roles: ['Front-end Development', 'Visual Design']
   - status: 'In Development'
   - organization: 'General Assembly Hackathon'
@@ -21,7 +21,7 @@ thumbnail: "https://plchldr.co/i/200x200?&bg=efefef&fc=444444"
 
 ## Overview
 
-New developers face this problem sooner or later: what should I build for my next project? Code Storm solves this problem by providing a forum for submitting and upvoting full-stack app ideas. As a submission gets more upvotes, their ranking goes up.
+New developers face this problem sooner or later: *what should I build for my next project*? Code Storm offers a solution by providing a forum for submitting and upvoting full-stack app ideas. As a submission gets more upvotes, their ranking goes up.
 
 ## Purpose & Goal
 `coming soon`

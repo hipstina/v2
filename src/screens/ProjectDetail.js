@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/components/ProjectDetails.css'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import NotFoundPage from './NotFoundPage'
 
 const ProjectDetail = (props) => {
   const [project, setProject] = useState([])
@@ -125,7 +126,9 @@ const ProjectDetail = (props) => {
           </section>
         </div>
       ) : (
-        <div>No project</div>
+        <div>
+          <NotFoundPage />
+        </div>
       )}
     </div>
   )
